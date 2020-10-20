@@ -1,0 +1,20 @@
+.services{
+    margin: 5em auto;
+
+
+    &__heading {
+        text-align: center;
+    }
+    &__item {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    @include for-desktop-up {
+        .grid-container {
+            grid-template-columns: auto auto auto auto;
+            column-gap: 1.5em;
+        }
+    }
+}

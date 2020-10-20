@@ -1,0 +1,36 @@
+.site-header {
+    background-color: $primary;
+    color: white;
+
+    &__contacts__list {
+        padding: 0;
+        list-style: none outside;
+        justify-content: space-between;
+
+        &__link {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__socials {
+        justify-content: center;
+        align-items: center;
+
+        &__list {
+            list-style: none outside;
+            margin: 0;
+            padding:0;
+            justify-content: space-evenly;
+
+            &__item {
+                margin: 0 1em;
+            }
+            &__link {
+                text-decoration: none;
+                color:inherit;
+            }
+
+        }
+    }
+}
