@@ -2,6 +2,7 @@
     align-items: center;
     background-color: white;
     position:relative;
+    padding: 1em 0;
 
     &__logo {
         width: 100%;
@@ -27,7 +28,7 @@
         }
         &__link {
             display: block;
-            background-color:$primary;
+            background-color:$dark-blue;
             border: 0.5px solid $transparent-7;
             font: inherit;
             color: white;

@@ -1,0 +1,38 @@
+.slider{
+    
+    position: relative;
+    height: 39em;
+    width:auto;
+    background-image: url('/assets/images/slider1.jpg');
+    background-size: cover;
+    transition: background-image 5s;
+    .content-container{
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+        color: white;
+    }
+    &__heading {
+        width: 60%;
+        animation: revealFromAbove 1s ease-in-out;
+    }
+    &__content {
+        width: 60%;
+        text-align: center;
+        margin: 2em 0;
+        animation: revealFromRight 1s ease-in-out;
+    }
+    .btn{
+        animation: revealFromDown 1s ease-in-out;
+    }
+    &::after {
+        display:block;
+        content:'';
+        position: absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        background-color: rgba(0,0,0,0.6);
+    }
+}

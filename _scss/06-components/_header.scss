@@ -1,7 +1,9 @@
 .site-header {
-    background-color: $primary;
+    background-color: $dark-blue;
     color: white;
-
+    &__top {
+        padding: 1em 0;
+    }
     &__contacts__list {
         padding: 0;
         list-style: none outside;

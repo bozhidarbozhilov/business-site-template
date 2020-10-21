@@ -23,11 +23,33 @@
 
 @keyframes revealFromRight {
     0%{
-        transform:translateX(100vw);
+        transform:translateX(20vw);
         opacity:0;
     }
     100%{
         transform: translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes revealFromAbove {
+    0%{
+        transform: translateY(-20vh);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes revealFromDown {
+    0%{
+        transform: translateY(20vh);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0);
         opacity:1;
     }
 }
