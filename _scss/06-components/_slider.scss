@@ -1,10 +1,10 @@
 .slider{
     position: relative;
-    max-height: 39em;
     width:auto;
     background-image: url('/assets/images/slider1.jpg');
     background-size: cover;
     transition: background-image 5s;
+    padding: 10rem 0;
     .content-container{
         justify-content: center;
         text-align: center;
