@@ -1,4 +1,19 @@
 .about-us{
     padding-top:100px;
     padding-bottom:60px;
+    &__article{
+        &__content{
+            padding: 1.5em 0;
+        }
+    }
+    &__gallery{
+
+        &__img {
+            width: 100%;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
 }

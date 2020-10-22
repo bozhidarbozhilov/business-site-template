@@ -1,0 +1,49 @@
+.service-card {
+    border: 1px solid rgb(230, 230, 230);
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    padding: 35px 30px 50px 30px;
+
+    &__wrapper {
+        position: relative;
+        z-index: 3;
+    }
+
+    &__icon {
+        font-size: 5rem;
+    }
+
+    &__content {
+        color: rgb(126, 126, 126);
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        color: $primary;
+        font-size: 1.2rem;
+    }
+
+
+    
+
+    &:hover {
+        &::after {
+            content:"";
+            display: block;
+            position: absolute;
+            top:0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color:rgba(0,0,0,0.4);
+        }
+        background-image: url('https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60') ;
+        background-size: cover;
+        background-position: center center;
+        background-attachment:local;
+        transition: all .5s;
+
+
+    }
+}

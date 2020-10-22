@@ -1,9 +1,12 @@
 .site-header {
     background-color: $dark-blue;
     color: white;
+
     &__top {
         padding: 1em 0;
+
     }
+
     &__contacts__list {
         padding: 0;
         list-style: none outside;
@@ -12,6 +15,10 @@
         &__link {
             text-decoration: none;
             color: inherit;
+        }
+
+        .icon {
+            padding-right: 0.5em;
         }
     }
 
@@ -22,15 +29,16 @@
         &__list {
             list-style: none outside;
             margin: 0;
-            padding:0;
+            padding: 0;
             justify-content: space-evenly;
 
             &__item {
                 margin: 0 1em;
             }
+
             &__link {
                 text-decoration: none;
-                color:inherit;
+                color: inherit;
             }
 
         }
