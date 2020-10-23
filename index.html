@@ -134,3 +134,52 @@ title: HomeLiquid
         </div>
     </div>
 </section>
+<section class="portfolio">
+    <div class="content-container">
+        <h3 class="portfolio__heading short-line short-line--primary short-line--center">
+            Recent Projects
+        </h3>
+        <p class="portfolio__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid tenetur quos voluptatibus voluptate commodi error veritatis porro doloribus voluptatum beatae. Perspiciatis cumque voluptates illum. Repudiandae laboriosam tenetur perferendis dolorum numquam?</p>
+        <div class="projects-list">
+            {% for project in site.projects %}
+            <article class="portfolio__item">
+                <a href="#" class="portfolio__item__img">
+                    <img src={{project.img}} alt="Category IoT">
+                </a>
+                <div class="portfolio__item__hover flex-container flex-container--column flex-container--centered">
+                    <div class="hover__content">
+                        <h4>{{project.category | upcase}}</h4>
+                        <p>{{project.name}}</p>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="testimonials">
+    <div class="content-container">
+        <div class="testimonials-list">
+            {% for testimonial in site.testimonials %}
+            <article class="testimonial__item flex-container flex-container--column flex-container--centered">
+                <div class="testimonial__item__text">
+                    <div class="quote quote--left"><i class="fas fa-quote-left"></i></div>
+                    <p>{{testimonial.text}}</p>
+                    <div class="quote quote--right">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                <a href="#" class="testimonial__item__img">
+                    <img src={{testimonial.img}} alt="client img">
+                </a>
+                <h4 class="testimonial__item__client-name">
+                    {{testimonial.client-name}}
+                </h4>
+                <div class="testimonial__item__client-job">
+                    {{testimonial.client-job}}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

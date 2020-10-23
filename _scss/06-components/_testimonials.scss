@@ -1,0 +1,39 @@
+.testimonials {
+    padding: 100px 0;
+    .testimonial__item {
+        &__text {
+            position: relative;
+            margin-bottom:1.5em;
+            p{
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+            .quote {
+                visibility: hidden;
+                color: $primary;
+                position:relative;
+            }
+            .quote--left {
+                left: 0;
+            }
+            .quote--right {
+                right: 0;
+            }
+            p{
+                text-align: center;
+                font-style: italic;
+            }
+        }
+        &__img {
+            margin-bottom:1.5em;
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+        &__client-name {
+            font-weight: bold;
+        }
+    }
+}
